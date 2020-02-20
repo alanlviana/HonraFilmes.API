@@ -20,6 +20,6 @@ mongoose.connect(mongoConnectionString,{
 app.use(express.json());
 app.use(routes);
 
-app.listen(3000, ()=> {
-    console.log('Servidor escutando a porta 3000');
+app.listen(port, ()=> {
+    console.log(`Servidor escutando a porta ${port}`);
 });
